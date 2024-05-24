@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           child: Center(
             child: Container(
               width: 200, // 원의 너비
-              height: 200, // 원의 높이
+              height: 150, // 원의 높이
               decoration: BoxDecoration(
                 color: Color(0xFFFF901C), // FF901C 색상의 동그라미
                 shape: BoxShape.circle, // 동그라미 모양
