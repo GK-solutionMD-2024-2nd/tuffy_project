@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class Knock_mornig extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,17 +13,29 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min, // 내용물 크기에 맞춰서 줄이기
                   children: [
-                    Container(
-                      width: 200, // 원의 너비
-                      height: 200, // 원의 높이
-                      decoration: BoxDecoration(
-                        color: Color(0xFFFF901C), // FF901C 색상의 동그라미
-                        shape: BoxShape.circle, // 동그라미 모양
-                      ),
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Container(
+                          width: 200, // 원의 너비
+                          height: 200, // 원의 높이
+                          decoration: BoxDecoration(
+                            color: Color(0xFFFF901C), // FF901C 색상의 동그라미
+                            shape: BoxShape.circle, // 동그라미 모양
+                          ),
+                        ),
+                        Text(
+                          'KNOCK',
+                          style: TextStyle(
+                            fontSize: 27,
+                            color: Colors.black, // 텍스트 색상
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 20), // 원과 텍스트 사이의 간격
                     Text(
-                      '누구에게 노크할건가요?',
+                      '< 남민주',
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black, // 텍스트 색상
