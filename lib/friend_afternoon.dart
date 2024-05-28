@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class friend_morning extends StatelessWidget {
+class friend_afternoon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // 친구 이름 목록
@@ -24,7 +24,7 @@ class friend_morning extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              color: Color(0xFFFFDE97), // FFDE97 색상의 배경
+              color: Color(0xFFFEC97A), // FFDE97 색상의 배경
               width: double.infinity,  // 전체 화면 너비
               height: double.infinity, // 전체 화면 높이
             ),
@@ -47,7 +47,7 @@ class friend_morning extends StatelessWidget {
                                   width: 80, // 원의 너비 (인스타 프로필 크기)
                                   height: 80, // 원의 높이 (인스타 프로필 크기)
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFFF901C), // FF901C 색상의 동그라미
+                                    color: Color(0xFFFF0741A), // FF901C 색상의 동그라미
                                     shape: BoxShape.circle, // 동그라미 모양
                                   ),
                                   child: Center(
