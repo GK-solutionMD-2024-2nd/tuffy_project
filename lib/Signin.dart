@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:knock_app/Signup.dart';
 
-class login extends StatelessWidget {
+class Signin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -118,13 +119,22 @@ class login extends StatelessWidget {
       ),
     ),
     SizedBox(height: 20), // 추가된 텍스트와 네모 사이의 간격
-    Text(
-      '회원가입하기',
-      style: TextStyle(
-        fontSize: 17,
-        color: Color(0xFFFF901C),
-      ),
+   GestureDetector(
+  onTap: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Signup()), // Signup 화면으로 이동
+    );
+  },
+  child: Text(
+    '회원가입하기',
+    style: TextStyle(
+      fontSize: 17,
+      color: Color(0xFFFF901C),
     ),
+  ),
+),
+
   ],
 ),
 
@@ -152,5 +162,5 @@ class login extends StatelessWidget {
 }
 
 void main() {
-  runApp(login());
+  runApp(Signin());
 }
