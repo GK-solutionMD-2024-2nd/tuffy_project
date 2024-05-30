@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:knock_app/setting.dart';
 
-class KnockDawn extends StatelessWidget {
+class Knockdawn extends StatelessWidget {
   final String friendName;
 
-  KnockDawn({required this.friendName});
+  Knockdawn({required this.friendName});
 
   @override
   Widget build(BuildContext context) {

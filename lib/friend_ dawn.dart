@@ -68,7 +68,7 @@ class FriendDawn extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => KnockDawn(friendName: friendNames[index]), // 클릭한 이름을 전달
+                                  builder: (context) => Knockdawn(friendName: friendNames[index]), // 클릭한 이름을 전달
                                 ),
                               );
                             },

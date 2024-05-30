@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:knock_app/friend_mdawn.dart';
+import 'package:knock_app/setting.dart';
 
 class Home_mdawn extends StatelessWidget {
   const Home_mdawn({super.key});
@@ -18,7 +19,10 @@ class Home_mdawn extends StatelessWidget {
                 color: Color(0xFFFF901C), // 아이콘 색상
               ),
               onPressed: () {
-                // 아이콘을 눌렀을 때의 동작을 여기에 추가
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingView()), // SettingView로 이동
+                ); // 이콘을 눌렀을 때의 동작을 여기에 추가
               },
             ),
           ],
