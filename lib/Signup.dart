@@ -33,7 +33,11 @@ class Signup extends StatelessWidget {
                             shape: BoxShape.circle, // 동그라미 모양
                           ),
                         ),
+
+
                         SizedBox(height: 60), // 동그라미와 네모 사이의 간격
+
+                        
                       Container(
   width: 346, // 네모의 너비
   height: 70, // 네모의 높이
@@ -61,96 +65,6 @@ class Signup extends StatelessWidget {
     ],
   ),
 ),
-
-
-                        SizedBox(height: 20), // 두 네모 사이의 간격
-                      Container(
-  width: 346, // 네모의 너비
-  height: 70, // 네모의 높이
-  decoration: BoxDecoration(
-    border: Border.all(
-      color: Color(0xFFAC8178), // 테두리 색상
-      width: 3, // 테두리 두께
-    ),
-    borderRadius: BorderRadius.circular(19), // 둥근 경계 반지름
-  ),
-  child: Column(
-    mainAxisAlignment: MainAxisAlignment.center, // 수직 정렬을 중앙에 배치
-    crossAxisAlignment: CrossAxisAlignment.start, // 수평 정렬을 왼쪽에 배치
-    children: [
-      Padding(
-        padding: EdgeInsets.only(left: 16), // 왼쪽 여백 추가
-        child: Text(
-          '아이디',
-          style: TextStyle(
-            fontSize: 19,
-            color: Color(0xFFAC8178),
-          ),
-        ),
-      ),
-    ],
-  ),
-),
-
-   SizedBox(height: 20), // 두 네모 사이의 간격
-                      Container(
-  width: 346, // 네모의 너비
-  height: 70, // 네모의 높이
-  decoration: BoxDecoration(
-    border: Border.all(
-      color: Color(0xFFAC8178), // 테두리 색상
-      width: 3, // 테두리 두께
-    ),
-    borderRadius: BorderRadius.circular(19), // 둥근 경계 반지름
-  ),
-  child: Column(
-    mainAxisAlignment: MainAxisAlignment.center, // 수직 정렬을 중앙에 배치
-    crossAxisAlignment: CrossAxisAlignment.start, // 수평 정렬을 왼쪽에 배치
-    children: [
-      Padding(
-        padding: EdgeInsets.only(left: 16), // 왼쪽 여백 추가
-        child: Text(
-          '비밀번호',
-          style: TextStyle(
-            fontSize: 19,
-            color: Color(0xFFAC8178),
-          ),
-        ),
-      ),
-    ],
-  ),
-),
-
-
-
-                        SizedBox(height: 30), // 두 네모 사이의 간격
-                   Column( // 새로운 Column 추가
-  children: [
-    Container(
-      width: 346, // 네모의 너비
-      height: 65, // 네모의 높이
-      decoration: BoxDecoration(
-        color: Color(0xFFFF901C), // 주황색 채우기
-        borderRadius: BorderRadius.circular(40), // 둥근 경계 반지름
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center, // 수직 정렬을 중앙에 배치
-        crossAxisAlignment: CrossAxisAlignment.center, // 수평 정렬을 가운데에 배치
-        children: [
-          Text(
-            '회원가입',
-            style: TextStyle(
-              fontSize: 23,
-              color: Colors.white, // 하양색으로 변경
-            ),
-          ),
-        ],
-      ),
-    ),
-   
-  ],
-),
-
 
                       ],
                     ),
