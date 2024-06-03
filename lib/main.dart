@@ -22,6 +22,8 @@ import 'firebase_options.dart';
 
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: MyWidget(), // MyWidget을 시작 화면으로 설정
+      home: HomeMornong(), // MyWidget을 시작 화면으로 설정
     );
   }
 }

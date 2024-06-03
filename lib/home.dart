@@ -13,14 +13,14 @@ import 'package:knock_app/friend_morning.dart';
 import 'package:knock_app/friend_night.dart';
 import 'package:knock_app/setting.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class HomeMornong extends StatelessWidget {
+  const HomeMornong({super.key});
 
   Widget Home() {
     final hour = DateTime.now().hour;
     if (hour >= 6 && hour < 17) {
       // 오전 6시부터 오후 5시까지
-      return MyWidget();
+      return HomeMornong();
     } else if (hour >= 17 && hour < 21) {
       // 오후 5시부터 오후 9시까지
       return Home_dawn();
@@ -105,46 +105,13 @@ class MyWidget extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Home()), // 시간에 따른 Home 페이지로 이동
+                                builder: (context) => FriendMorning()), // 시간에 따른 Home 페이지로 이동
                           );
                         },
+                    
                         child: Container(
-                          width: 100, // 원의 너비
-                          height: 100, // 원의 높이
-                          decoration: BoxDecoration(
-                            color: Color(0xFFFF901C), // FF901C 색상의 동그라미
-                            shape: BoxShape.circle, // 동그라미 모양
-                          ),
-                        ),
-                      ),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Knock("")), // 시간에 따른 Knock 페이지로 이동
-                          );
-                        },
-                        child: Container(
-                          width: 100, // 원의 너비
-                          height: 100, // 원의 높이
-                          decoration: BoxDecoration(
-                            color: Color(0xFFFF901C), // FF901C 색상의 동그라미
-                            shape: BoxShape.circle, // 동그라미 모양
-                          ),
-                        ),
-                      ),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Friend()), // 시간에 따른 Friend 페이지로 이동
-                          );
-                        },
-                        child: Container(
-                          width: 100, // 원의 너비
-                          height: 100, // 원의 높이
+                          width: 200, // 원의 너비
+                          height: 200, // 원의 높이
                           decoration: BoxDecoration(
                             color: Color(0xFFFF901C), // FF901C 색상의 동그라미
                             shape: BoxShape.circle, // 동그라미 모양
